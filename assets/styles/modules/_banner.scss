@@ -1,0 +1,59 @@
+.banner {
+  position: relative;
+  padding: 60px $content-padding-x-lg 54px;
+  color: $white;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: calc(-1em / 100);
+
+  &-cnp {
+    background-color: $accent-color;
+  }
+
+  &-aikon {
+    background-color: $aicon-color;
+  }
+
+  &__logo {
+    height: 44px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+    & img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &__columns {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    gap: 120px;
+
+    @media (max-width: 1500px) {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__products {
+    max-width: 335px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 232px;
+    pointer-events: none;
+  }
+}
